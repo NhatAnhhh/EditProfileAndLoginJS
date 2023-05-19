@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <ul class="nav-container">
+                <li class="avata">
+                    <img src="./img/logo@0 1.svg" alt="">
+                </li>
+
+                <li class="item">
+                    <img src="./img/Vector.svg" alt="">
+                </li>
+
+                <li class="item">
+                    <img src="./img/VectorNotify.svg" alt="">
+                </li>
+
+                <li class="item">
+                    <img src="./img/VectorScrt.svg" alt="">
+                </li>
+
+                <li class="item">
+                    <img src="./img/Vectorz.svg" alt="">
+                </li>
+
+                <li class="item">
+                    <img src="./img/Vectorprofile.svg" alt="">
+                </li>
+
+                <li class="item">
+                    <div class="crk" id="crk" onclick="openDiv()" style="cursor: pointer;">
+                        <img src="./img/Vectorsetting.svg" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="setting-container" id="setting-container">
+                <ul class="setting-content">
+                    <li style="margin-top: 60px;">
+                        <i onclick="closeDiv()" id="iconSetting" class="fa-solid fa-chevron-left"
+                            style="margin-right: 20px; cursor: pointer;"></i>
+                        <b><span>Settings</span></b>
+                    </li>
+                    <li class="item-setting" onclick="selectDiv(this)">
+                        <img src="./img/IconEditsvg.svg" alt="">
+                        <b><span>Edit profile</span></b>
+                    </li>
+                    <li class="item-setting" onclick="selectDiv(this)">
+                        <img src="./img/iconSetting.svg" alt="">
+                        <span>Notification</span>
+                    </li>
+                    <li class="item-setting" onclick="selectDiv(this)">
+                        <img src="./img/IconSCR.svg" alt="">
+                        <span>Security</span>
+                    </li>
+                    <li class="item-setting" onclick="selectDiv(this)">
+                        <img src="./img/VectorIconAppera.svg" alt="">
+                        <span>Appearance</span>
+                    </li>
+                    <li class="item-setting" onclick="selectDiv(this)">
+                        <img src="./img/VectorHelp.svg" alt="">
+                        <span>Help</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-container">
+                <form class="content-edit" id="content-edit">
+                    <div class="edit-header">
+                        <h1>Edit profile</h1>
+                        <p id="userName"></p>
+                        <img id="logoutBtn" onclick="logout()" src="" alt=""
+                            style="cursor: pointer; width: 100px; height: 100px; border-radius: 100%;">
+                    </div>
+
+                    <div class="FLname">
+                        <span>
+                            <label for="Firstname" style="font-family: cursive; font-size: 25px;">First name</label><br>
+                            <input class=" inputFLname" id="Firstname" type="text" placeholder="Anh">
+                        </span>
+                        <span>
+                            <label for="Lastname" style="font-family: cursive; font-size: 25px;">Lastname</label><br>
+                            <input class=" inputFLname" id="Lastname" type="text" placeholder="Nguyen">
+                        </span>
+                    </div>
+
+                    <div class="inputEmail">
+                        <label for="email">Email</label><br>
+                        <input id="inputEmail" class="inputEdit" type="email" placeholder="anh@gmali.com">
+                    </div>
+
+                    <div class="inputAdress">
+                        <label for="Adress">Adress</label><br>
+                        <input id="inputProfile" class="inputEdit" type="text" placeholder="VietNam">
+                    </div>
+
+                    <div class="inputNumber">
+                        <label for="number">Number</label><br>
+                        <input id="inputProfile" class="inputEdit" type="text" placeholder="6868999">
+                    </div>
+
+                    <div class="selectCity">
+                        <label for="city">City</label><br>
+                        <select id="city" name="city">
+                            <option value="australia">HCM</option>
+                            <option value="canada">HaNoi</option>
+                            <option value="usa">DaNang</option>
+                        </select>
+                    </div>
+
+                    <div class="btn">
+                        <span>
+                            <button id="btnCancel" class="btnCancel">Cancel</button>
+                            <button type="button" id="btnSave" class="btnSave">Save</button>
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="mian.js"></script>
+    <script src="getApi.js"></script>
+</body>
+
+</html>

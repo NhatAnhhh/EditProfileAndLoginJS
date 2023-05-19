@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <div class="login-title-container">
+                <div class="login-title">
+
+                    <div class="login-logo"></div>
+                    <h1 style="    font-weight: 600;
+                    font-size: 56px;">Log in</h1>
+
+                    <div class="input-Username">
+                        <p>Username</p>
+                        <input id="username" type="text" style="background-color: #C0DBEA;"><br>
+                    </div>
+
+                    <div class="input-Password">
+                        <div style="display: flex; justify-content: space-between;">
+                            <p>Password</p>
+                            <p>Forgot Password ?</p>
+                        </div>
+
+                        <input id="password" class="password" type="password">
+                        <img src="./img/clarity_eye-hide-line.png" alt="">
+                    </div>
+
+                    <div class="submit-container">
+
+                        <div>
+                            <button onclick="loginBtn()" class="btnLogin" type="submit" style="width: 150px;
+                            height: 46px; color: white;">LOGIN IN <img src="./img/VectoriconBtn.png" alt=""> </button>
+                        </div>
+
+                        <p style="color: #6096B4; cursor: pointer;">or continue with</p>
+
+                        <div class="icon-login">
+                            <button class="icon"><img src="./img/GoogleGG.png" alt=""></button>
+                            <button class="icon"><img src="./img/GithubGit.png" alt=""></button>
+                            <button class="icon"><img src="./img/FacebookFB.png" alt=""></button>
+                        </div>
+
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <span style="color: #000000;opacity: 0.5; cursor: pointer;">
+                                Don’t have an account yet?</span>
+                            <span style="color: #D885A3; cursor: pointer;">Sign up for free</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="login-img">
+                <div class="backGroud"></div>
+                <div class="img"></div>
+
+                <div class="imgWork">
+                    <img src="./img/Character-working-laptop-sitting-chair.png" alt="">
+                </div>
+
+                <div class="imgPlant">
+                    <img src="./img/cactussad.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="getApi.js"></script>
+</body>
+
+</html>

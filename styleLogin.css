@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+}
+
+.login-container {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login-content {
+    width: 1366px;
+    height: 849px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    margin-left: 176px;
+}
+
+.login-title-container {
+    float: left;
+    width: 48.65%;
+}
+
+.login-img {
+    float: right;
+    width: 51.35%;
+
+    height: 100%;
+    border-radius: 20px;
+}
+
+.login-title {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 136px;
+}
+
+.login-logo {
+    width: 212px;
+    height: 47px;
+    background-image: url(./img/FacebookFB.png);
+    border-radius: 40px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+input {
+    width: 478px;
+    height: 46px;
+    border-radius: 5px;
+    border: 1px solid #6096B4;
+}
+
+.submit-container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 31px;
+}
+
+.btnLogin {
+    background: #D885A3;
+    border-radius: 23px;
+    border: 1px solid #d4c4ca;
+    cursor: pointer;
+}
+
+.icon {
+    width: 125px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #6096B4;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.input-Password {
+    position: relative;
+}
+
+.input-Password img {
+    position: absolute;
+    top: 49%;
+    left: 93%;
+    width: 20px;
+    height: 20px;
+}
+
+.input-Password input {
+    background-color: #C0DBEA;
+}
+
+.backGroud {
+    float: right;
+    width: 65%;
+    background-color: #C0DBEA;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.img {
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+
+.login-img {
+    position: relative;
+}
+
+.imgWork {
+    position: absolute;
+    top: 25%;
+    left: -6%;
+}
+
+.imgPlant {
+    position: absolute;
+    top: 30%;
+    left: 62%;
+}

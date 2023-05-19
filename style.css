@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.content {
+    /* position: relative; */
+    display: flex;
+}
+
+.container {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+
+    width: 120px;
+    height: 750px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFC297;
+}
+
+.avata {
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.item {
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+
+.item:last-child {
+    margin-top: 165px;
+}
+
+.crk {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #FF7008;
+}
+
+.item:last-child img {
+    margin-top: 10px;
+    margin-left: 11px;
+}
+
+.setting-container {
+    /* position: absolute; */
+    height: 750px;
+    width: 200px;
+    float: left;
+    width: 20%;
+    border-right: 1px solid #858585;
+
+}
+
+.setting-content {
+    display: grid;
+    flex-direction: column;
+    /* align-items: stretch; */
+    height: 400px;
+    justify-items: start;
+    align-content: space-between;
+    justify-content: center;
+
+}
+
+.item-setting {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.item-setting.selected {
+    opacity: 1;
+    color: black;
+    font-weight: 700;
+}
+
+.item-setting:not(.selected) {
+    opacity: 0.3;
+}
+
+.item-setting>img {
+    margin-right: 20px;
+}
+
+.item-setting>span {
+    color: #858585;
+}
+
+.content-container {
+    float: right;
+    width: 80%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-edit {
+    height: 85%;
+    width: 70%;
+    display: grid;
+}
+
+.edit-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+}
+
+.FLname {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-edit>div>label {
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.inputFLname {
+    /* font-size: 150%;
+    border-radius: 3px;
+    border: 1px solid #858585; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 150%;
+}
+
+.inputEdit {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 150%;
+    width: 100%;
+}
+
+.selectCity>select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.btnCancel {
+    background-color: #FFFFFF;
+    color: #FF7008;
+    border: 2px solid #FF7008;
+    border-radius: 5px;
+    width: 180px;
+    height: 55px;
+    font-family: cursive;
+    cursor: pointer;
+    transition: width 2s, height 4s;
+}
+
+/* .btnCancel:hover {
+    width: 150px;
+    height: 80px;
+} */
+
+.btnSave {
+    background-color: #FF7008;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    width: 180px;
+    height: 55px;
+    font-family: cursive;
+    cursor: pointer;
+    transition: width 2s, height 4s;
+}
+
+/* .btnSave:hover {
+    width: 150px;
+    height: 80px;
+} */
+
+.error {
+    border: 1px solid red;
+}
